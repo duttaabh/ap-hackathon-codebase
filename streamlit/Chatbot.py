@@ -3,9 +3,9 @@ import boto3
 import uuid
 
 # Set the name of your Lex bot
-bot_name = 'UCMCE8D1Q8'
-bot_alias_id = 'TSTALIASID'
-bot_region = 'us-east-1'
+bot_name = 'xxxxxxxx'
+bot_alias_id = 'xxxxxxxx'
+bot_region = 'xxxxxxx'
 
 # Create the Lex client
 lex = boto3.client('lexv2-runtime', region_name=bot_region)
