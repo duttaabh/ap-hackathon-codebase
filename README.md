@@ -4,7 +4,7 @@
 3. python -m venv venv
 4. source venv/bin/activate
 5. pip install -r ../requirements.txt
-6. Open the Cahtbot.py file and update the following details:
+6. Open the Chatbot.py file and update the following details:
       bot_name = 'xxxxxxxx'
       bot_alias_id = 'xxxxxxxx'
       bot_region = 'xxxxxxx'
