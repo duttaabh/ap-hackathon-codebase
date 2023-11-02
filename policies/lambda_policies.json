@@ -1,0 +1,50 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:aws:logs:us-east-1:<AccountID>:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:<AccountID>:log-group:/aws/lambda/HackathonWorkshopFullfillment:*"
+            ]
+        },
+        {
+            "Sid": "AllowsKendraSearchAppToCallKendraApi",
+            "Effect": "Allow",
+            "Action": [
+                "kendra:*"
+            ],
+            "Resource": [
+                "arn:aws:kendra:us-east-1:<AccountID>:index/<xxxxx-xxxxx-xxxxxx-xxxxxx>"
+            ]
+        },
+        {
+            "Sid": "AllowKendraSearchAppToDescribeDataSourcesAndFaq",
+            "Effect": "Allow",
+            "Action": [
+                "kendra:*"
+            ],
+            "Resource": [
+                "arn:aws:kendra:us-east-1:<AccountID>:index//xxxxx-xxxxx-xxxxxx-xxxxxxdata-source/*"
+            ]
+        },
+        {
+            "Sid": "AllowKendraSearchAppToCallSSODescribeUsersAndGroups",
+            "Effect": "Allow",
+            "Action": [
+                "sso-directory:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
