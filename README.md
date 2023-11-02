@@ -5,7 +5,6 @@
 4. source env/bin/activate
 5. pip install -r ../requirements.txt
 6. Open the Cahtbot.py file and update the following details:
-      # Set the name of your Lex bot
       bot_name = 'xxxxxxxx'
       bot_alias_id = 'xxxxxxxx'
       bot_region = 'xxxxxxx'
