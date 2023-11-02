@@ -1,8 +1,8 @@
 # Instructions to run the streamlit application on mac or linux
 1. git clone https://github.com/duttaabh/ap-hackathon-codebase.git
 2. cd ap-hackathon-codebase/streamlit
-3. python -m venv env
-4. source env/bin/activate
+3. python -m venv venv
+4. source venv/bin/activate
 5. pip install -r ../requirements.txt
 6. Open the Cahtbot.py file and update the following details:
       bot_name = 'xxxxxxxx'
